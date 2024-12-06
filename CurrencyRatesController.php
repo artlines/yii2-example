@@ -17,7 +17,6 @@ use yii\web\Response;
 class CurrencyRatesController extends Controller
 {
     private $currencyRatesManageService;
-
     private $user;
     private $currencyBankRatesService;
 
