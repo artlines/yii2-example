@@ -35,9 +35,6 @@ class CurrencyRatesController extends Controller
         $this->user = Yii::$app->user->identity;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function behaviors()
     {
         return [
