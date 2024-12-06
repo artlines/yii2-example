@@ -85,9 +85,6 @@ class OpenAiApi
         return trim($resultMessage);
     }
 
-    /**
-     * @param OpenAiChatMessageDto[] $messages
-     */
     public function chatCompletion(string $model, array $messages): string
     {
         $request = $this->client->createRequest('POST', 'chat/completions');
