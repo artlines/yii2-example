@@ -144,13 +144,6 @@ class CounselingService
             }
 
             foreach ($stacks as $stack => $grades) {
-                if (count($grades) == 3) {
-                    $usersNeedleText .= "- {$stack} (любого уровня)" . PHP_EOL;
-                } else {
-                    $grades = implode(', ', $grades);
-                    $usersNeedleText .= "- {$stack} ({$grades})" . PHP_EOL;
-                }
-
                 if (empty(array_merge(...$userWorkloads))) {
                     $userWorkloads[] = $this->workloadService->getUsersWorkloads([
                         'profile' => $stack,
